@@ -1,0 +1,71 @@
+
+<div class="card">
+                         <div class="card-header">
+                              {{pageTitle}}
+                         </div>
+                                   <div class="card-body">
+                                        <div class="row">
+                                                            <div class="col-sm-2">Filter by: </div>
+                                                            <div  class="col-sm-4">
+                                                                 <input type="text" [(ngModel)]="listFilter"></div>
+                                             
+                                        </div>
+                                   </div>
+
+                           <div class="row">
+
+
+                              <div class="col-sm-6">
+                                   <h4>Filtered by: {{listFilter}}</h4>
+                           </div>        
+                                   
+</div>
+
+<!--table starts from here-->
+<div class="col-sm-8 container">
+<div class="table "> 
+     <table class="table  table  table-bordered  table-striped " border="1"
+      *ngIf="products.length">
+
+
+          <thead class=" text-center">
+               <tr style="background-color: white;">
+                    <th><button class="btn btn-success" 
+                         (click)=" toggleimage()">{{showimage ? 'Hide Images' :'Show Images' }}</button></th>
+                    <th>ProductNo</th>
+                    <th>productName</th>
+                    <th>Code</th>
+                    <th>Availability</th>
+                    <th>Price</th>
+                    <th>Rating(out of 5)</th>
+                    <th>description</th>
+               </tr>
+           </thead>
+           <tbody>
+
+               <tr *ngFor="let  x of filteredproducts">
+                    <td class="zoom">
+                         <img   *ngIf="showimage"
+                         [src]= 'x.imageUrl'
+                         [title]="x.productname"
+                         [style.width.px]="imagewidth"
+                         [style.margin.px]="imagemargin">
+                    </td>
+                    <td>{{x.productid}}</td>
+                    <td>{{x.productname}}</td>
+                    <td>{{x.productcode | uppercase | convertToSpacesPipe :'-'}}</td>
+                    <td>{{x.releasedate}}</td>
+                    <td>{{x.price | currency: "INR" :'symbol':'1.2-3'}}  <br></td>
+                    <td>{{x.Starrating}}</td>
+                    <td>{{x.description | convertToSpacesPipe :'jay'}}</td>
+                    
+               </tr>
+
+
+           </tbody>
+     </table>
+
+
+
+</div>
+</div>

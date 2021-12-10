@@ -1,0 +1,22 @@
+[
+{
+     "productid":1,
+     "productname":"benz",
+     "productcode":" benz-121",
+     "releasedate":"MARCH 18 2021",
+     "description":"---jay---",
+     "price":41.5500,
+     "Starrating": 5,
+     "imageUrl":"assets/benz.jpg"
+},
+     {
+     "productid":2,
+     "productname":"rolls royce",
+     "productcode":"rolls-145",
+     "releasedate":"april 20 2021",
+     "description":" ---car description---",
+     "price":59.9545,
+     "Starrating": 4.7,
+     "imageUrl":"assets/rolls.jpg"
+   }
+]
