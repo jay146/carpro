@@ -9,11 +9,11 @@ const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot([
-    {path:'productslist',component:ProductListComponent},
+    {path:'product',component:ProductListComponent},
     {path:'product/:id',component:ProductDetailComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:' ',redirectTo:'welcome',pathMatch:'full'},
-    {path:'**',component:PagenotfoundComponent},
+    
 
   ])],
   exports: [RouterModule]

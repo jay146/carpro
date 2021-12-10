@@ -24,7 +24,8 @@
 <!--table starts from here-->
 <div class="col-sm-8 container">
 <div class="table "> 
-     <table class="table  table  table-bordered  table-striped " border="1"
+     <table class="table  table  table-bordered  table-striped " 
+     border="1"
       *ngIf="products.length">
 
 
@@ -52,7 +53,13 @@
                          [style.margin.px]="imagemargin">
                     </td>
                     <td>{{x.productid}}</td>
-                    <td>{{x.productname}}</td>
+                    <td>
+                         <a [routerLink]="['/product', x.productid]">
+                         {{x.productname}}
+                        </a>
+                        
+                    
+                    </td>
                     <td>{{x.productcode | uppercase | convertToSpacesPipe :'-'}}</td>
                     <td>{{x.releasedate}}</td>
                     <td>{{x.price | currency: "INR" :'symbol':'1.2-3'}}  <br></td>
