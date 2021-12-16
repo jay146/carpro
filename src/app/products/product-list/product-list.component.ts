@@ -17,9 +17,7 @@ showimage:boolean=true;
 products:Iproducts[]=[
 ];
 errormessage='';
-  sub!: Subscription;
-
-
+sub!: Subscription;
 
 toggleimage(){
   this.showimage= !this.showimage;
@@ -46,8 +44,6 @@ console.log("value in setter is",value);
 this.filteredproducts=this.performFilter(value);
 }
 // setter executed when a value is assigned to the property.
-
-
 performFilter(filteredby:string){
 console.log("filtered value in performfilter() method is "+filteredby);
 filteredby=filteredby.toLocaleLowerCase();
@@ -58,8 +54,6 @@ return this.products.
 filter((products:Iproducts)=>
 products.productname.toLocaleLowerCase().includes(filteredby));
 }
-
-
 constructor(private ps:ProductsService) { 
 
 }
