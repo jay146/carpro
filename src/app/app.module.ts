@@ -12,6 +12,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AboutComponent } from './about/about.component';
+import { ExpComponent } from './exp/exp.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AboutComponent } from './about/about.component';
      WelcomeComponent,
      PagenotfoundComponent,
      AboutComponent,
+     ExpComponent,
      
   ],
   imports: [

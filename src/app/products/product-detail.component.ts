@@ -17,6 +17,10 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit(): void {
 const id=Number(this.route.snapshot.paramMap.get('id'));
 this.pageTitle+=`:${id}`;  
+console.log("ngonInit called");
+console.log("value of id  in ngOnInit() is "+id);
+
+
 }
 home(){
   this.router.navigate(['/welcome']);

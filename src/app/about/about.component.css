@@ -1,6 +1,11 @@
 body{
-     background-color: burlywood;
+   
+    text-align:center;
+    font-family: "Helveteca Neue",Helvitica ,Arial, Helvetica, sans-serif;
+     margin:0;
+
 }
+
 .box1{
      width:200px;
      height:200px;
@@ -53,9 +58,73 @@ width: 100%;
      .gridused
      {
      display: grid;
+     background-color: #FFDEDE;
 
           
      }
 
 
+
+p{
+     background-color: yellow;
+     width:200px;
+     height: 50px;
+     display: inline-block;
+}
+.inlineblock{
+     width:1000px;
+     background-color: darkgray;
+}
+.display-none{
+display: block;
+width: 300px;
+height: 50px;
+background-color: darkmagenta;
+
+}
+
+.bottom-cloud{
+position:absolute;
+}
+
+.topcontainer{
+     position: relative;
+     
+
+
+
+}
+
+.top-cloud{
+     position: absolute;
+     left:300px;
+}
+
+.bottom-cloud{
+     position: absolute;
+
+     right:300px;
+}
+
+
+h1{
+    
+     font-family: 'Sacramento',cursive;
+     margin: 0 auto ;
+     width:30%;
+     color: darkorchid;
+}
+
+h2{
+     font-family:'Montserrat',serif
+     
+}
+
+.rain{
+     position: absolute;
+     bottom:30px;
+     right:290px;
+     top:320px;
+     width:20%;
+}
 

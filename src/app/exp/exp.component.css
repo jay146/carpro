@@ -1,0 +1,40 @@
+body{
+     background-color: darkseagreen;
+}
+
+#type{
+     width: 16%;
+     
+}
+
+
+#name{
+     width: 20%;
+     
+}
+#currency{
+     width:16%;
+}
+
+#date{
+     width:30%;
+}
+
+
+
+#amt{
+     width:20%;
+}
+.centered{
+     display: flex;
+     margin: auto;
+     
+   justify-content: center;
+}
+
+.btn{
+     border: solid violet 5px;
+}
+.add-friend{
+     width: 80px;
+}

@@ -1,11 +1,14 @@
 <div class="card">
-<div class="card-header" *ngIf="product">
-     {{pageTitle +":"+product.productname}}
+<div class="card-body" >
+     hello
+     <h1>{{pageTitle +":"+product?.productid}} </h1>
+     
 </div>
 <div class="card-footer">
      <!--h4 class="text-warning">used safe navigation operator ? </h4-->
-<button class="btn btn-info "(click)="onback()">Product Details</button>
+<button class="btn btn-info "(click)="onback()"> Product Details</button>
 
 <button class="btn  btn-warning"(click)="home()">home</button>
 </div>
+
 </div>
