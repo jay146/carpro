@@ -9,7 +9,8 @@ import { Iproducts } from './iproducts';
 export class ProductsService {
    
   private productUrl='api/products/products.json';
-    getproducts():Observable<Iproducts[]>{
+  
+  getproducts():Observable<Iproducts[]>{
 return  this.http.get<Iproducts[]>
 (this.productUrl).
 pipe(
@@ -33,9 +34,7 @@ tap(
     console.log( errormessage);
     return throwError(errormessage);
     
-    
-
-  }
+    }
   constructor(private http:HttpClient) { }
 }
 
