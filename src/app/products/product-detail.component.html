@@ -1,13 +1,28 @@
 <div class="card">
-<div class="card-body" >
-     hello
-     <h1>{{pageTitle +":"+product?.productid}} </h1>
-     
-</div>
+     <div class="card-header"  >
+          <!--h1>{{pageTitle +":"+product?.productname}} </h1-->
+       </div>
+       <div class="card-body">
+            <table class="table  table-bordered table-striped" border="2">
+               <thead class=" text-center">  
+               <tr  style="background-color: blueviolet;">
+             <th>product id</th>
+                    <th>product name</th>
+ </tr>
+               </thead>
+               <tbody>
+<tr *ngFor="let x of products">
+     <td>{{x.productid}}</td>
+                    <td>{{x.productname}}</td>
+               </tr>
+               </tbody>
+          </table>
+       </div>
+
+
 <div class="card-footer">
      <!--h4 class="text-warning">used safe navigation operator ? </h4-->
-<button class="btn btn-info "(click)="onback()"> Product Details</button>
-
+<button class="btn btn-info "(click)="onback()">  Back to Product Details</button>
 <button class="btn  btn-warning"(click)="home()">home</button>
 </div>
 

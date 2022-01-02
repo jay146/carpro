@@ -14,8 +14,7 @@ imagewidth:number=100;
 imagemargin:number=2;
 showimage:boolean=true;
 //listFilter:string="benz";
-products:Iproducts[]=[
-];
+products:Iproducts[]=[];
 errormessage='';
 sub!: Subscription;
 
@@ -48,7 +47,6 @@ performFilter(filteredby:string){
 console.log("filtered value in performfilter() method is "+filteredby);
 filteredby=filteredby.toLocaleLowerCase();
 console.log("filteredby VALUE IS "+filteredby);
-
 // converting into lowercase
 return this.products.
 filter((products:Iproducts)=>
