@@ -25,7 +25,7 @@ tap(
     let errormessage="";
     if(err.error instanceof ErrorEvent)
     {
-      errormessage=`An error occured: ${err.error.message}`
+      errormessage=`An error occured: ${err.error.message}`;
     }
     else
     {
