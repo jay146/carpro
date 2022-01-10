@@ -20,7 +20,7 @@ sub!: Subscription;
 
 toggleimage(){
   this.showimage= !this.showimage;
-  console.log("image are rendered");
+  console.log("image are rendered"); 
 }
 filteredproducts:any;
 //listFilter:string="benz";
@@ -33,8 +33,7 @@ private productservice:any;
 
 get listFilter():string{
   return this._listFilter;
-
- }
+}
 // get method returns the backing variable  from user input
 set listFilter(value:string){
 this._listFilter=value;
@@ -45,7 +44,7 @@ this.filteredproducts=this.performFilter(value);
 // setter executed when a value is assigned to the property.
 performFilter(filteredby:string){
 console.log("filtered value in performfilter() method is "+filteredby);
-filteredby=filteredby.toLocaleLowerCase();
+filteredby=filteredby.toLocaleLowerCase();  
 console.log("filteredby VALUE IS "+filteredby);
 // converting into lowercase
 return this.products.
@@ -65,7 +64,7 @@ ngOnInit(): void {
         this.filteredproducts=this.products;
       },
       error:err=>this.errormessage=err,
-
+ 
     });
  
 
