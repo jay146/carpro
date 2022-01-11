@@ -13,6 +13,7 @@ export class ProductDetailComponent implements OnInit {
   products: any;
   pageTitle:string='Product  clicked is';
 
+  
 sub!: Subscription;
   errormessage: any;
   constructor( private ps:ProductsService,private route:ActivatedRoute,
@@ -23,6 +24,7 @@ sub!: Subscription;
   ngOnInit(): void {
 const id=Number(this.route.snapshot.paramMap.get('id'));
 this.pageTitle+=`:${id}`;  
+
 console.log("ngonInit called");
 console.log("value of id  in ngOnInit() is "+id);
 this.sub=this.ps.getproducts().subscribe({

@@ -11,6 +11,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 const routes: Routes = [];
 
 @NgModule({
+  
   imports: [RouterModule.forRoot([
     {path:'product',component:ProductListComponent},
     {path:'product/:id',canActivate:[ProductDetailGuard],

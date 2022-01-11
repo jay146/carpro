@@ -7,8 +7,7 @@ import { Iproducts } from './iproducts';
   providedIn: 'root'
 })
 export class ProductsService {
-   
-  private productUrl='api/products/products.json';
+   private productUrl='api/products/products.json';
   
   getproducts():Observable<Iproducts[]>{
 return  this.http.get<Iproducts[]>

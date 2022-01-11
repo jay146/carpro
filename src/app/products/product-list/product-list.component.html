@@ -20,23 +20,13 @@
                                    
 </div>
 
-<!--table starts from here-->
+<!-- table starts from here -->
 <div class="col-sm-8 container">
 <div class="table "> 
-<<<<<<< Updated upstream
-     <table class="table    table-bordered  table-striped " 
-     border="1"
-      *ngIf="products.length">
-
-
-          <thead class=" text-center">
-=======
-     <table class="table  table  table-bordered  table-striped "  border="1" *ngIf="products.length">
+<table class="table  table  table-bordered  table-striped "  border="1" *ngIf="products.length">
 <thead class=" text-center">
->>>>>>> Stashed changes
                <tr style="background-color: white;">
-                    <th><button class="btn btn-success" 
-                         (click)=" toggleimage()">{{showimage ? 'Hide Images' :'Show Images' }}</button></th>
+                    <th><button class="btn btn-success"  (click)=" toggleimage()">{{showimage ? 'Hide Images' :'Show Images' }}</button></th>
                     <th>ProductNo</th>
                     <th>productName</th>
                     <th>Code</th>
@@ -62,14 +52,17 @@
                          {{x.productname}}
                         </a>
                     </td>
-                    <td>{{x.productcode | uppercase | convertToSpacesPipe :'-'}}</td>
+                    <td>{{x.productcode | uppercase  | convertToSpacesPipe :'-'}}</td>
                     <td>{{x.releasedate}}</td>
                     <td>{{x.price | currency: "INR" :'symbol':'1.2-3'}}  <br></td>
                     <td>{{x.Starrating}}</td>
-                    <td>{{x.description | convertToSpacesPipe :'jay'}}</td>
+                    <td>{{x.description | convertToSpacesPipe :'JAY FIRST'}}</td>
                     
                </tr>
 </tbody>
      </table>
 </div>
+
 </div>
+ <!-- npm i ng2-search-filter -->
+ 

@@ -18,7 +18,7 @@ products:Iproducts[]=[];
 errormessage='';
 sub!: Subscription;
 
-toggleimage(){
+toggleimage(){ 
   this.showimage= !this.showimage;
   console.log("image are rendered"); 
 }
