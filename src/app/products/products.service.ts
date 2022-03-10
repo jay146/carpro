@@ -7,8 +7,7 @@ import { Iproducts } from './iproducts';
   providedIn: 'root'
 })
 export class ProductsService {
-   
-  private productUrl='api/products/products.json';
+   private productUrl='api/products/products.json';
   
   getproducts():Observable<Iproducts[]>{
 return  this.http.get<Iproducts[]>
@@ -25,7 +24,7 @@ tap(
     let errormessage="";
     if(err.error instanceof ErrorEvent)
     {
-      errormessage=`An error occured: ${err.error.message}`
+      errormessage=`An error occured: ${err.error.message}`;
     }
     else
     {

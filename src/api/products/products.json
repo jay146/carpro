@@ -4,7 +4,7 @@
      "productname":"benz",
      "productcode":" benz-121",
      "releasedate":"MARCH 18 2021",
-     "description":"---jay---",
+     "description":"JAY FIRST CAR DESCRIPTION",
      "price":41.5500,
      "Starrating": 5,
      "imageUrl":"assets/benz.jpg"
@@ -14,9 +14,21 @@
      "productname":"rolls royce",
      "productcode":"rolls-145",
      "releasedate":"april 20 2021",
-     "description":" ---car description---",
+     "description":" car description",
      "price":59.9545,
      "Starrating": 4.7,
      "imageUrl":"assets/rolls.jpg"
+   },
+
+
+   {
+     "productid":3,
+     "productname":"SUZUKI",
+     "productcode":"SUZUKI-146",
+     "releasedate":"FEB 2 2022",
+     "description":" car description",
+     "price":40.5,
+     "Starrating": 3.8,
+     "imageUrl":"assets/swift.png"
    }
 ]
