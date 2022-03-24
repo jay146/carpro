@@ -1,3 +1,4 @@
+import { AuthService } from './auth.service';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,6 +14,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AboutComponent } from './about/about.component';
 import { ExpComponent } from './exp/exp.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { EventsComponent } from './events/events.component';
+import { SpecialEventsComponent } from './special-events/special-events.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +30,10 @@ import { ExpComponent } from './exp/exp.component';
      PagenotfoundComponent,
      AboutComponent,
      ExpComponent,
+     LoginComponent,
+     RegisterComponent,
+     EventsComponent,
+     SpecialEventsComponent,
      
   ],
   imports: [
@@ -35,7 +44,7 @@ import { ExpComponent } from './exp/exp.component';
     
     
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

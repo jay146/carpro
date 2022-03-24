@@ -1,0 +1,55 @@
+<div class="card">
+    <div class="outer">
+    <div class="card-header form-control bg-info">
+        Register here
+    </div>
+    </div>
+    <!-- <div [hidden]="!user.name">
+      My name is: {{user.name}}
+    </div> -->
+  
+    <div class="card-body">
+     <form  class="form-group">
+<label for="email">Enter Name</label>
+<input type="text"  #emailRef class="form-control" 
+name="email"
+placeholder="please enter ur email"
+   [(ngModel)]="registeredUserData.email"
+    required >
+
+
+     </form>
+     <form  class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control"
+          name="password"
+           [(ngModel)]="registeredUserData.password"
+           placeholder="please enter password"
+           required >
+           <br/>
+        
+           <div class="outer">
+        <button type="button" class="btn-success" (click)="registerUser()">submit</button>
+    </div>
+             </form>
+    </div>
+  </div>
+
+message is {{message}}
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>error occured </th>
+        <th>  error code </th>
+       
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        
+        <td>{{errorMsg.message}}</td>
+        <td>{{errorMsg.status}}</td>
+      </tr> 
+    </tbody>
+  </table>

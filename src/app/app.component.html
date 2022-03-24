@@ -1,15 +1,22 @@
-
-
-    
-     <nav class="navbar navbar-expand navbar-light bg-light">
-<a class="navbar-brand">{{pageTitle}}</a>
+<nav class="navbar navbar-expand navbar-light bg-light">
+<a class="navbar-brand">{{pageTitle}}</a> 
 <ul class="nav nav-pills">
      <li><a class="nav-link" routerLink="/product">Product List</a></li>
      <li><a class="nav-link" routerLink=
           '/product/ :id'>Product Details</a></li>
      <li><a class="nav-link" routerLink="/welcome">Home</a></li>
-    <li><a class="nav-link" routerLink="/about">About</a></li>
-    <li><a class="nav-link" routerLink="/expense">Expenses</a></li>
+    <li><a class="nav-link" routerLink="/events">Events</a></li>
+
+    
+    <li><a class="nav-link" routerLink="/login">login</a></li>
+    
+    
+    <li><a class="nav-link" routerLink="/register">register</a></li>
+    
 </ul>
 </nav>
+
+<h1 [style.color]="hascolor? 'red':'green'">welcome to app component</h1>
+<button (click)="toggle()">change</button>
      <router-outlet></router-outlet>
+     

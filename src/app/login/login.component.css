@@ -1,0 +1,14 @@
+.card{
+    width:50%;
+    background-color: black;
+ 
+}
+
+.outer{
+    display:flex;
+    justify-content:center;
+}
+.card-haeder{
+   
+  text-align: center;
+}

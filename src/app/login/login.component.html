@@ -1,0 +1,52 @@
+<div class="card">
+    <div class="outer">
+    <div class="card-header form-control bg-info">
+        Login
+    </div>
+    </div>
+  
+    <div class="card-body">
+                            <form  class="form-group">
+                        <label for="email">Enter Name</label>
+                        <input type="text" class="form-control" 
+                        name="email"
+                        placeholder="please enter ur email"
+                          [(ngModel)]="loginUserData.email" required >
+                        </form>
+
+     <form  class="form-group">
+        <label for="password">Password</label>
+        <input type="text" class="form-control"
+          name="password"
+           [(ngModel)]="loginUserData.password"
+           placeholder="please enter password"
+           required >
+          </form>
+           <br/>
+           <div class="outer">
+        <button type="button" class="btn-success" (click)="loginUser()">submit</button>
+    </div>
+            
+    </div>
+  </div>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>error occured </th>
+        <th>  error code </th>
+        <th>error occured due to</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+    
+     
+      <tr>
+        
+        <td>{{errorMsg.message}}</td>
+        <td>{{errorMsg.status}}</td>
+        <td>{{ errorMsg.error}}</td>
+      </tr>
+    </tbody>
+  </table>
